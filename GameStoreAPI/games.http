@@ -1,0 +1,55 @@
+GET http://localhost:5090
+
+###
+
+GET http://localhost:5090/games
+
+###
+
+GET http://localhost:5090/games/1
+
+###
+
+POST http://localhost:5090/games
+Content-Type: application/json
+
+{
+    "name": "Hollow Knight Silksong",
+    "genreId": 6,
+    "price": 14.99,
+    "releaseDate": "2024-07-15"
+}
+
+###
+
+PUT http://localhost:5090/games/2
+Content-Type: application/json
+
+{
+    "name": "Hollow Knight",
+    "genreId": 6,
+    "price": 9.99,
+    "releaseDate": "2024-07-15"
+}
+
+###
+
+DELETE http://localhost:5090/games/4
+
+
+###
+
+PUT http://localhost:5090/games/10
+Content-Type: application/json
+
+{
+    "id": 10,
+    "name": "Among Us",
+    "genre": "Social Deduction",
+    "price": 0.00,
+    "releaseDate": "2015-07-15"
+}
+
+###
+
+GET http://localhost:5090/games/10
